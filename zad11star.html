@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 11 - Starostecki</title>
+</head>
+<body>
+
+<div style="color:green; font-size:53px;">
+<script type="text/javascript">
+
+// Dawid Starostecki
+// Zadanie 11
+
+var D1_kow = prompt("Podaj pierwszy dzień stycznia D1=", "");
+var D2_kow = prompt("Podaj drugi dzień stycznia D2=", "");
+
+var sekund;
+var a = parseFloat(D1_kow);
+var b = parseFloat(D2_kow);
+
+sekund = (a - b) * 24 * 60 * 60;
+
+document.write("Ilość sekund między dniami " + a + " i " + b +
+               " = " + sekund + " sekund<br>");
+
+function okno_zamknij_kow() {
+    window.close();
+}
+
+</script>
+</div>
+
+<input type="button" value="Zamknij okno"
+       onclick="okno_zamknij_kow()">
+
+</body>
+</html>
