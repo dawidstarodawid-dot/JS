@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea rows="50" cols="500">
+
+<html>
+ <body>
+ <div style="color:green;font-size:40px;">
+ <script language="JavaScript">
+// Dawid Starostecki 3F
+// Zadanie 12
+
+var D1_sta = prompt("Podaj Dzien nr 1 (D1):", "");
+var G1_sta = prompt("Podaj godzinę w tym dniu (G1):", "");
+var D2_sta = prompt("Podaj Dzien nr 2 (D2):", "");
+var G2_sta = prompt("Podaj godzinę w tym dniu (G2):", "");
+
+var d1 = parseFloat(D1_sta);
+var g1 = parseFloat(G1_sta);
+var d2 = parseFloat(D2_sta);
+var g2 = parseFloat(G2_sta);
+
+
+var t1 = (d1 - 1) * 24 * 3600 + g1 * 3600;
+var t2 = (d2 - 1) * 24 * 3600 + g2 * 3600;
+
+var sekund = t1 - t2;
+
+document.write("Ilość sekund między D1="+d1+" G1="+g1+" a D2="+d2+" G2="+g2+" = " + sekund + " sekund<br>");
+
+function okno_zamknij_sta()
+{
+  window.close()
+}
+ </script>
+ </div>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_sta()"/>
+ </body>
+</html>
+    </textarea>
+</body>
+</html>
