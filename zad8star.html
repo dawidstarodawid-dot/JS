@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 8 - Starostecki</title>
+
+    <script type="text/javascript">
+        function show_confirm() {
+            var r = confirm("Naciśnij klawisz");
+
+            if (r == true) {
+                document.getElementById("wynik").innerHTML =
+                    "Nacisnąłeś OK!";
+            }
+            else {
+                document.getElementById("wynik").innerHTML =
+                    "Nacisnąłeś Cancel!";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Zadanie 8 - Confirm Box</h2>
+
+    <input type="button"
+           onclick="show_confirm()"
+           value="Pokaż confirm box">
+
+    <p id="wynik"></p>
+
+    <h3>Teoria</h3>
+
+    <p>
+        <b>Zastosowanie Confirm Box:</b><br>
+        Jest używany, gdy chcemy zapytać użytkownika o
+        potwierdzenie lub akceptację danych. Użytkownik może
+        wybrać OK albo Cancel. Metoda confirm() zwraca
+        <u>true</u>, jeśli wybrano OK, lub <u>false</u>,
+        jeśli wybrano Cancel.
+    </p>
+
+</body>
+</html>
