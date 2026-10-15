@@ -1,0 +1,42 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 16 - Sterowanie wydrukami</title>
+</head>
+<body>
+
+<div style="color:black; font-size:30px;">
+<script language="JavaScript">
+
+// Dawid Starostecki 3F
+// Zadanie 16
+
+var A_dana = prompt("Podaj pierwszą liczbę", "");
+var B_dana = prompt("Podaj drugą liczbę", "");
+
+var A = parseInt(A_dana);
+var B = parseInt(B_dana);
+
+var s1 = A * A * A;
+var s2 = 3 * A * A * B;
+var s3 = 3 * A * B * B;
+var s4 = B * B * B;
+
+var suma = s1 + s2 + s3 + s4;
+
+document.write("Wczytane liczby: A = " + A + ", B = " + B + "<br>");
+
+document.write(
+    "(" + A + " + " + B + ")^3 = " +
+    A + "^3 + 3*(" + A + "^2)*(" + B + ") + " +
+    "3*(" + A + ")*(" + B + "^2) + " + B + "^3 = " +
+    s1 + " + " + s2 + " + " +
+    s3 + " + " + s4 + " = " + suma
+);
+
+</script>
+</div>
+
+</body>
+</html>
