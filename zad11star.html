@@ -17,8 +17,8 @@ var D1_kow = prompt("Podaj pierwszy dzień stycznia D1=", "");
 var D2_kow = prompt("Podaj drugi dzień stycznia D2=", "");
 
 var sekund;
-var a = parseFloat(D1_kow);
-var b = parseFloat(D2_kow);
+var a = parseFloat(D1_sta);
+var b = parseFloat(D2_sta);
 
 sekund = (a - b) * 24 * 60 * 60;
 
@@ -33,7 +33,7 @@ function okno_zamknij_kow() {
 </div>
 
 <input type="button" value="Zamknij okno"
-       onclick="okno_zamknij_kow()">
+       onclick="okno_zamknij_sta()">
 
 </body>
 </html>
