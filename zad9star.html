@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 9 - Starostecki</title>
+
+    <script type="text/javascript">
+        function show_prompt() {
+            var name = prompt("Napisz imię", "Imię Nazwisko");
+
+            if (name != null && name != "") {
+                document.getElementById("wynik").innerHTML =
+                    "Witaj " + name + "! Jak się masz?";
+            }
+            else if (name == "") {
+                document.getElementById("wynik").innerHTML =
+                    "Nie wpisano imienia.";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Zadanie 9 - Prompt Box</h2>
+
+    <input type="button"
+           onclick="show_prompt()"
+           value="Pokaż prompt box">
+
+    <p id="wynik"></p>
+
+    <h3>Teoria</h3>
+
+    <p>
+        <b>Zastosowanie Prompt Box:</b><br>
+        Jest używany, gdy użytkownik ma wpisać jakąś wartość,
+        na przykład imię. Po kliknięciu OK funkcja prompt()
+        zwraca wpisany tekst. Po kliknięciu Cancel zwraca
+        <u>null</u>. Jeśli pole pozostanie puste, zwracany jest
+        pusty ciąg znaków.
+    </p>
+
+</body>
+</html>
