@@ -1,1 +1,60 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 19 - Kwadrat</title>
+</head>
+<body>
+
+<h2>Wszystko o KWADRACIE</h2>
+<br>
+Podaj długość boku:  <input type="number" id="dlugosc" step="any"> cm
+
+<br><br>
+
+<button onclick="Pole_star()">Oblicz pole</button>
+
+<button onclick="obwod_star()">Oblicz obwód</button>
+
+<p id="nazwa"></p>
+
+<script>
+
+function Pole_star()
+{
+    var a_star = parseFloat(document.getElementById("dlugosc").value);
+
+    if (isNaN(a_star) || a_star <= 0)
+    {
+        document.getElementById("nazwa").innerHTML = "Podaj poprawną długość boku.";
+        return;
+    }
+
+    var b_star = a_star * a_star;
+
+    document.getElementById("nazwa").innerHTML =
+    "Pole kwadratu = " + b_star.toFixed(2) + " cm²";
+}
+
+function obwod_star()
+{
+    var a_star = parseFloat(document.getElementById("dlugosc").value);
+
+    if (isNaN(a_star) || a_star <= 0)
+    {
+        document.getElementById("nazwa").innerHTML = "Podaj poprawną długość boku.";
+        return;
+    }
+
+    var b_star = 4 * a_star;
+
+    document.getElementById("nazwa").innerHTML =
+    "Obwód kwadratu = " + b_star.toFixed(2) + " cm";
+}
+
+</script>
+
+</body>
+</html>
+
