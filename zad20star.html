@@ -1,1 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 20 - Długości boków trójkąta</title>
+</head>
+<body>
 
+<h2>Obliczanie długości boków trójkąta</h2>
+
+<script>
+
+var xa_star = parseFloat(prompt("Podaj xa punktu A:"));
+var ya_star = parseFloat(prompt("Podaj ya punktu A:"));
+
+var xb_star = parseFloat(prompt("Podaj xb punktu B:"));
+var yb_star = parseFloat(prompt("Podaj yb punktu B:"));
+
+var xc_star = parseFloat(prompt("Podaj xc punktu C:"));
+var yc_star = parseFloat(prompt("Podaj yc punktu C:"));
+
+</script>
+
+<p>
+<button onclick="AB_star()">Oblicz AB</button>
+<button onclick="BC_star()">Oblicz BC</button>
+<button onclick="AC_star()">Oblicz AC</button>
+</p>
+
+<p id="wynik"></p>
+
+<script>
+
+function AB_star()
+{
+    var wynik_star = Math.sqrt(
+        Math.pow(xb_star - xa_star, 2) +
+        Math.pow(yb_star - ya_star, 2)
+    );
+
+    document.getElementById("wynik").innerHTML =
+    "Długość boku AB = " + wynik_star.toFixed(2);
+}
+
+function BC_star()
+{
+    var wynik_star = Math.sqrt(
+        Math.pow(xc_star - xb_star, 2) +
+        Math.pow(yc_star - yb_star, 2)
+    );
+
+    document.getElementById("wynik").innerHTML =
+    "Długość boku BC = " + wynik_star.toFixed(2);
+}
+
+function AC_star()
+{
+    var wynik_star = Math.sqrt(
+        Math.pow(xc_star - xa_star, 2) +
+        Math.pow(yc_star - ya_star, 2)
+    );
+
+    document.getElementById("wynik").innerHTML =
+    "Długość boku AC = " + wynik_star.toFixed(2);
+}
+
+</script>
+
+</body>
+</html>
