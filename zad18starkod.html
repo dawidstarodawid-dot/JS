@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Kod źródłowy - Zadanie 18</title>
+</head>
+<body>
+<h1>Kod źródłowy - Zadanie 18</h1>
+
+<textarea rows="50" cols="500">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Użycie funkcji - Zadanie 18</title>
+</head>
+<body>
+
+<div style="color:navy;font-size:30px;">
+
+<script>
+
+var a = parseFloat(prompt("Podaj pierwszą liczbę a =", ""));
+var b = parseFloat(prompt("Podaj drugą liczbę b =", ""));
+
+function suma_star(a, b) {
+    return a + b;
+}
+
+function odejmowanie_star(a, b) {
+    return a - b;
+}
+
+function mnozenie_star(a, b) {
+    return a * b;
+}
+
+function od_kwadratu_star(a, b) {
+    return "a² = " + (a * a) + "<br>b² = " + (b * b);
+}
+
+function reszta_z_dzielenia_a_przez_b_star(a, b) {
+    return a % b;
+}
+
+document.write("Liczba a = " + a + "<br>");
+document.write("Liczba b = " + b + "<br><br>");
+
+document.write("Suma = " + suma_star(a, b) + "<br>");
+document.write("Odejmowanie = " + odejmowanie_star(a, b) + "<br>");
+document.write("Mnożenie = " + mnozenie_star(a, b) + "<br>");
+
+document.write("Podnoszenie do kwadratu:<br>");
+document.write(od_kwadratu_star(a, b) + "<br><br>");
+
+if (b !== 0) {
+    document.write("Reszta z dzielenia a przez b = " +
+        reszta_z_dzielenia_a_przez_b_star(a, b));
+} else {
+    document.write("Nie można obliczyć reszty z dzielenia przez zero.");
+}
+
+</script>
+
+</div>
+
+</body>
+</html>
+</textarea>
+
+</body>
+</html>
