@@ -1,146 +1,67 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Zadanie 17 - Teoria JavaScript</title>
-
-    <style>
-        body {
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-        margin: 30px;
-        color: #222;
-        }
-
-        .kontener {
-            background-color: white;
-            padding: 25px;
-            border-radius: 10px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h1 {
-            text-align: center;
-            color: navy;
-        }
-
-        h2 {
-            color: darkblue;
-            font-size: 19px;
-        }
-
-        .odpowiedz {
-            margin-bottom: 25px;
-            line-height: 1.6;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: lightblue;
-        }
-    </style>
+    <meta charset="utf-8">
+    <title>Zadanie 17</title>
 </head>
-
 <body>
 
-<div class="kontener">
+<h2>Zadanie 17 - JavaScript</h2>
 
-    <h1>Zadanie 17 - Teoria JavaScript</h1>
+<p><b>1. Wymień cztery sposoby wyprowadzania danych w JS.</b></p>
 
-    <div class="odpowiedz">
-        <h2>1. Wymień cztery sposoby wyprowadzania danych w JS.</h2>
+<p><u>Odpowiedź:</u></p>
 
-        <p><strong><u>Odpowiedź:</u></strong></p>
+<ol>
+    <li>Za pomocą document.write() – wyświetla dane na stronie.</li>
+    <li>Za pomocą alert() – wyświetla komunikat w okienku.</li>
+    <li>Do okienek formularza – wyświetla dane w polach formularza.</li>
+    <li>Do tabeli – wyświetla dane w komórkach tabeli HTML.</li>
+</ol>
 
-        <ol>
-            <li>Za pomocą metody <b>document.write()</b> – wyświetla dane bezpośrednio na stronie.</li>
-            <li>Za pomocą funkcji <b>alert()</b> – wyświetla komunikat w okienku przeglądarki.</li>
-            <li>Do okienek formularza – dane są wyświetlane w polach formularza, np. input.</li>
-            <li>Do tabeli HTML – dane są przedstawiane w komórkach tabeli na stronie.</li>
-        </ol>
-    </div>
+<p><b>2. Czym jest funkcja w JS? Omów przy użyciu 4 podpunktów.</b></p>
 
-    <hr>
+<p><u>Odpowiedź:</u></p>
 
-    <div class="odpowiedz">
-        <h2>2. Czym jest funkcja w JS? Omów przy użyciu 4 podpunktów.</h2>
+<ol>
+    <li>Funkcja jest zbiorem zgrupowanych instrukcji, które można uruchomić poprzez podanie jej nazwy.</li>
+    <li>Po wywołaniu funkcja wykonuje zapisany w niej kod.</li>
+    <li>Funkcja może przyjmować argumenty, które są przetwarzane wewnątrz funkcji, np. suma(a, b).</li>
+    <li>Funkcja może zwracać obliczoną wartość za pomocą słowa kluczowego return.</li>
+</ol>
 
-        <p><strong><u>Odpowiedź:</u></strong></p>
+<p><b>3. Omów metody getElementsByName, getElementById, getElementsByTagName.</b></p>
 
-        <ol>
-            <li>Funkcja to zbiór zgrupowanych instrukcji, które możemy uruchomić poprzez podanie jej nazwy.</li>
-            <li>Po wywołaniu funkcja wykonuje zapisany w niej kod.</li>
-            <li>Funkcja może przyjmować argumenty, które są przekazywane do jej wnętrza i przetwarzane, np. <b>suma(a, b)</b>.</li>
-            <li>Funkcja może zwracać obliczoną wartość za pomocą słowa kluczowego <b>return</b>.</li>
-        </ol>
-    </div>
+<p><u>Odpowiedź:</u></p>
 
-    <hr>
+<table border="1">
+    <tr>
+        <th>Metoda</th>
+        <th>Opis</th>
+    </tr>
+    <tr>
+        <td>getElementsByName("nazwa")</td>
+        <td>Pobiera elementy o określonej wartości atrybutu name.</td>
+    </tr>
+    <tr>
+        <td>getElementById("id")</td>
+        <td>Pobiera element o określonej wartości atrybutu id.</td>
+    </tr>
+    <tr>
+        <td>getElementsByTagName("znacznik")</td>
+        <td>Pobiera elementy o określonym typie znacznika, np. P lub DIV.</td>
+    </tr>
+</table>
 
-    <div class="odpowiedz">
-        <h2>3. Omów metody getElementsByName, getElementById, getElementsByTagName.</h2>
+<p><b>4. Omów właściwości innerHTML, innerText, className.</b></p>
 
-        <p><strong><u>Odpowiedź:</u></strong></p>
+<p><u>Odpowiedź:</u></p>
 
-        <table>
-            <tr>
-                <th>Metoda</th>
-                <th>Opis</th>
-            </tr>
+<p><b>innerHTML</b> – umożliwia odczytywanie, zmienianie, wstawianie lub usuwanie kodu HTML wewnątrz elementu.</p>
 
-            <tr>
-                <td><b>getElementsByName("nazwa")</b></td>
-                <td>Pobiera elementy posiadające określoną wartość atrybutu name.</td>
-            </tr>
+<p><b>innerText</b> – umożliwia odczytywanie lub ustawianie tekstu wewnątrz elementu.</p>
 
-            <tr>
-                <td><b>getElementById("id")</b></td>
-                <td>Pobiera element o określonej wartości atrybutu id.</td>
-            </tr>
-
-            <tr>
-                <td><b>getElementsByTagName("znacznik")</b></td>
-                <td>Pobiera wszystkie elementy o określonym typie znacznika, np. P lub DIV.</td>
-            </tr>
-        </table>
-    </div>
-
-    <hr>
-
-    <div class="odpowiedz">
-        <h2>4. Omów właściwości innerHTML, innerText, className.</h2>
-
-        <p><strong><u>Odpowiedź:</u></strong></p>
-
-        <p>
-            <b>innerHTML</b> – umożliwia odczytywanie, modyfikowanie,
-            wstawianie lub usuwanie kodu HTML znajdującego się wewnątrz elementu.
-        </p>
-
-        <p>
-            <b>innerText</b> – umożliwia odczytywanie lub ustawianie
-            tekstu wyświetlanego wewnątrz danego elementu.
-        </p>
-
-        <p>
-            <b>className</b> – umożliwia odczytywanie lub ustawianie
-            nazwy klasy CSS przypisanej do elementu.
-        </p>
-    </div>
-
-</div>
+<p><b>className</b> – umożliwia odczytywanie lub ustawianie nazwy klasy CSS elementu.</p>
 
 </body>
 </html>
