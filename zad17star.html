@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 17 - Teoria JavaScript</title>
 
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 30px;
+        color: #222;
+        }
+
+        .kontener {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: navy;
+        }
+
+        h2 {
+            color: darkblue;
+            font-size: 19px;
+        }
+
+        .odpowiedz {
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="kontener">
+
+    <h1>Zadanie 17 - Teoria JavaScript</h1>
+
+    <div class="odpowiedz">
+        <h2>1. Wymień cztery sposoby wyprowadzania danych w JS.</h2>
+
+        <p><strong><u>Odpowiedź:</u></strong></p>
+
+        <ol>
+            <li>Za pomocą metody <b>document.write()</b> – wyświetla dane bezpośrednio na stronie.</li>
+            <li>Za pomocą funkcji <b>alert()</b> – wyświetla komunikat w okienku przeglądarki.</li>
+            <li>Do okienek formularza – dane są wyświetlane w polach formularza, np. input.</li>
+            <li>Do tabeli HTML – dane są przedstawiane w komórkach tabeli na stronie.</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <div class="odpowiedz">
+        <h2>2. Czym jest funkcja w JS? Omów przy użyciu 4 podpunktów.</h2>
+
+        <p><strong><u>Odpowiedź:</u></strong></p>
+
+        <ol>
+            <li>Funkcja to zbiór zgrupowanych instrukcji, które możemy uruchomić poprzez podanie jej nazwy.</li>
+            <li>Po wywołaniu funkcja wykonuje zapisany w niej kod.</li>
+            <li>Funkcja może przyjmować argumenty, które są przekazywane do jej wnętrza i przetwarzane, np. <b>suma(a, b)</b>.</li>
+            <li>Funkcja może zwracać obliczoną wartość za pomocą słowa kluczowego <b>return</b>.</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <div class="odpowiedz">
+        <h2>3. Omów metody getElementsByName, getElementById, getElementsByTagName.</h2>
+
+        <p><strong><u>Odpowiedź:</u></strong></p>
+
+        <table>
+            <tr>
+                <th>Metoda</th>
+                <th>Opis</th>
+            </tr>
+
+            <tr>
+                <td><b>getElementsByName("nazwa")</b></td>
+                <td>Pobiera elementy posiadające określoną wartość atrybutu name.</td>
+            </tr>
+
+            <tr>
+                <td><b>getElementById("id")</b></td>
+                <td>Pobiera element o określonej wartości atrybutu id.</td>
+            </tr>
+
+            <tr>
+                <td><b>getElementsByTagName("znacznik")</b></td>
+                <td>Pobiera wszystkie elementy o określonym typie znacznika, np. P lub DIV.</td>
+            </tr>
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="odpowiedz">
+        <h2>4. Omów właściwości innerHTML, innerText, className.</h2>
+
+        <p><strong><u>Odpowiedź:</u></strong></p>
+
+        <p>
+            <b>innerHTML</b> – umożliwia odczytywanie, modyfikowanie,
+            wstawianie lub usuwanie kodu HTML znajdującego się wewnątrz elementu.
+        </p>
+
+        <p>
+            <b>innerText</b> – umożliwia odczytywanie lub ustawianie
+            tekstu wyświetlanego wewnątrz danego elementu.
+        </p>
+
+        <p>
+            <b>className</b> – umożliwia odczytywanie lub ustawianie
+            nazwy klasy CSS przypisanej do elementu.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
