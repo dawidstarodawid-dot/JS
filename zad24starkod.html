@@ -2,71 +2,60 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>KOD Zadanie 24</title>
+    <title>KOD Zadanie 23</title>
 </head>
 
 <body>
-    <h2>Kod źródłowy - Zadanie 24</h2>
+    <h2>Kod źródłowy - Zadanie 23</h2>
 
-    <textarea rows="50" cols="500">
+<textarea rows="50" cols="500">
+
 <!DOCTYPE html>
-<html>
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <title>Zadanie 24</title>
-
-    <script>
-        var liczba_liter_imienia_star = 5;
-
-        function y1_star(x1_star, x2_star) {
-            return 3 * Math.pow(x1_star, liczba_liter_imienia_star / (liczba_liter_imienia_star + 2));
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: blue;
+            font-size: 18px;
         }
-
-        function y2_star(x1_star, x2_star) {
-            var rad_star = x1_star * Math.PI / 180;
-            return 2 * Math.cos(rad_star) + 3 * Math.sin(rad_star);
-        }
-
-        function y3_star(x1_star, x2_star) {
-            return Math.pow(
-                Math.pow(x1_star, 5) +
-                2 * Math.pow(x2_star, 4) * Math.abs(x1_star - x2_star),
-                1 / 3
-            );
-        }
-
-        function oblicz_star() {
-            var x1_star = parseFloat(prompt("Podaj x1:"));
-            var x2_star = parseFloat(prompt("Podaj x2:"));
-            }
-
-            var rad_star = x1_star * Math.PI / 180;
-
-            var wynik1_star = y1_star(x1_star, x2_star);
-            var wynik2_star = y2_star(x1_star, x2_star);
-            var wynik3_star = y3_star(x1_star, x2_star);
-
-            document.getElementById("wyniki_star").innerHTML =
-                "x1 = " + x1_star + " &nbsp;&nbsp; x2 = " + x2_star + "<br>" +
-                "x1 = " + x1_star + " &nbsp;&nbsp; x1 = " + rad_star.toFixed(2) + "<br>" +
-                "y1 = " + wynik1_star.toFixed(2) + "<br>" +
-                "y2 = " + wynik2_star.toFixed(2) + "<br>" +
-                "y3 = " + wynik3_star.toFixed(2);
-        }
-    </script>
+    </style>
 </head>
-
 <body>
-    <h2>Obliczenia z użyciem Math</h2>
 
-    <input type="button" value="Wczytaj liczby i oblicz" onclick="oblicz_star()">
+<script>
 
-    <h3>Wyniki:</h3>
+    let x1_star = parseFloat(prompt("Podaj pierwszą liczbę (x1 - w stopniach):", "30"));
+    let x2_star = parseFloat(prompt("Podaj drugą liczbę (x2):", "2"));
 
-    <div id="wyniki_star" style="background-color: silver; color: blue; border: 1px solid black; width: 300px; padding: 5px; font-size: 12px;">
-    </div>
+    document.write("x1 = " + x1_star + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x2 = " + x2_star + "<br>");
+
+    let rad_star = (x1_star * Math.PI) / 180;
+
+    document.write("x1 = " + x1_star + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x1 = " + rad_star.toFixed(2) + "<br>");
+
+
+    let liczba_liter_imienia_star = 5; 
+    let wykladnik_star = liczba_liter_imienia_star / (liczba_liter_imienia_star + 2);
+    let y1_star = 3 * Math.pow(x1_star, wykladnik_star);
+    document.write("y1 = " + y1_star.toFixed(2) + "<br>");
+
+    let y2_star = 2 * Math.cos(rad_star) + 3 * Math.sin(rad_star);
+    document.write("y2 = " + y2_star.toFixed(2) + "<br>");
+
+    let pod_pierwiastkiem_star = Math.pow(x1_star, 5) + 2 * Math.pow(x2_star, 4);
+    let y3_star = Math.cbrt(pod_pierwiastkiem_star) * Math.abs(x1_star - x2_star);
+    document.write("y3 = " + y3_star.toFixed(2) + "<br>");
+</script>
+
 </body>
 </html>
+
+
+
+        
     </textarea>
 </body>
 </html>
