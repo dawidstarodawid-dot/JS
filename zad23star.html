@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 23</title>
 
+    <script>
+        function dlugosc_star(D_star, X_star) {
+            return Math.sqrt(Math.pow(D_star, 2) + Math.pow(X_star, 2));
+        }
+
+        function kat_star(D_star, X_star) {
+            return Math.atan(D_star / X_star) * 180 / Math.PI;
+        }
+
+        function oblicz_star() {
+            var D_star = parseFloat(document.getElementById("D_star").value);
+            var X_star = parseFloat(document.getElementById("X_star").value);
+
+            if (isNaN(D_star) || isNaN(X_star) || D_star <= 0 || X_star <= 0) {
+                alert("Podaj poprawne dodatnie wartości!");
+                return;
+            }
+
+            document.getElementById("wynik_dlugosc").value =
+                dlugosc_star(D_star, X_star).toFixed(2);
+
+            document.getElementById("wynik_kat").value =
+                kat_star(D_star, X_star).toFixed(2);
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Drabina oparta o mur</h2>
+
+    <form>
+        Wysokość oparcia drabiny D [m]:
+        <input type="number" id="D_star" step="any"><br><br>
+
+        Odległość drabiny od muru X [m]:
+        <input type="number" id="X_star" step="any"><br><br>
+
+        <input type="button" value="Oblicz" onclick="oblicz_star()">
+        <br><br>
+
+        Długość drabiny [m]:
+        <input type="text" id="wynik_dlugosc" readonly><br><br>
+
+        Kąt nachylenia [stopnie]:
+        <input type="text" id="wynik_kat" readonly>
+    </form>
+</body>
+</html>
