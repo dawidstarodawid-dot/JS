@@ -5,38 +5,7 @@
     <title>Zadanie 22 - Prostokąt</title>
 </head>
 <body>
-
-<h2>Obliczanie pola i obwodu prostokąta</h2>
-
-<p>Podaj długość pierwszego boku:</p>
-<input type="number" id="a_dana_star" step="any">
-
-<p>Podaj długość drugiego boku:</p>
-<input type="number" id="b_dana_star" step="any">
-
-<br><br>
-
-<button onclick="Pole_star()">Oblicz pole</button>
-<button onclick="obwod_star()">Oblicz obwód</button> 
-
-<br><br>
-
-<table border="1">
-    <tr>
-        <th>Wynik</th>
-        <th>Wartość</th>
-    </tr>
-    <tr>
-        <td>Pole prostokąta</td>
-        <td><input type="text" id="pole" readonly></td>
-    </tr>
-    <tr>
-        <td>Obwód prostokąta</td>
-        <td><input type="text" id="obw" readonly></td>
-    </tr>
-</table>
-
-<script>
+    <script>
 
 function Pole_star(a_star, b_star)
 {
@@ -71,6 +40,35 @@ function obwod_star(a_star, b_star)
 }
 
 </script>
+<h2>Obliczanie pola i obwodu prostokąta</h2>
+
+<p>Podaj długość pierwszego boku:</p>
+<input type="number" id="a_dana_star" step="any">
+
+<p>Podaj długość drugiego boku:</p>
+<input type="number" id="b_dana_star" step="any">
+
+<br><br>
+
+<button onclick="Pole_star()">Oblicz pole</button>
+<button onclick="obwod_star()">Oblicz obwód</button> 
+
+<br><br>
+
+<table border="1">
+    <tr>
+        <th>Wynik</th>
+        <th>Wartość</th>
+    </tr>
+    <tr>
+        <td>Pole prostokąta</td>
+        <td><input type="text" id="pole" readonly></td>
+    </tr>
+    <tr>
+        <td>Obwód prostokąta</td>
+        <td><input type="text" id="obw" readonly></td>
+    </tr>
+</table>
 
 </body>
 </html>
