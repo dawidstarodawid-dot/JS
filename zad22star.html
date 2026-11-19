@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Zadanie 22 - Prostokąt</title>
+</head>
+<body>
 
+<h2>Obliczanie pola i obwodu prostokąta</h2>
+
+<p>Podaj długość pierwszego boku:</p>
+<input type="number" id="a_dana_star" step="any">
+
+<p>Podaj długość drugiego boku:</p>
+<input type="number" id="b_dana_star" step="any">
+
+<br><br>
+
+<button onclick="Pole_star()">Oblicz pole</button>
+<button onclick="obwod_star()">Oblicz obwód</button> 
+
+<br><br>
+
+<table border="1">
+    <tr>
+        <th>Wynik</th>
+        <th>Wartość</th>
+    </tr>
+    <tr>
+        <td>Pole prostokąta</td>
+        <td><input type="text" id="pole" readonly></td>
+    </tr>
+    <tr>
+        <td>Obwód prostokąta</td>
+        <td><input type="text" id="obw" readonly></td>
+    </tr>
+</table>
+
+<script>
+
+function Pole_star(a_star, b_star)
+{
+    a_star = parseFloat(document.getElementById("a_dana_star").value);
+    b_star = parseFloat(document.getElementById("b_dana_star").value);
+
+    if (isNaN(a_star) || isNaN(b_star) || a_star <= 0 || b_star <= 0)
+    {
+        alert("Podaj poprawne długości boków.");
+        return;
+    }
+
+    var wynik_star = a_star * b_star;
+
+    document.getElementById("pole").value = wynik_star.toFixed(2);
+}
+
+function obwod_star(a_star, b_star)
+{
+    a_star = parseFloat(document.getElementById("a_dana_star").value);
+    b_star = parseFloat(document.getElementById("b_dana_star").value);
+
+    if (isNaN(a_star) || isNaN(b_star) || a_star <= 0 || b_star <= 0)
+    {
+        alert("Podaj poprawne długości boków.");
+        return;
+    }
+
+    var wynik_star = 2 * a_star + 2 * b_star;
+
+    document.getElementById("obw").value = wynik_star.toFixed(2);
+}
+
+</script>
+
+</body>
+</html>
